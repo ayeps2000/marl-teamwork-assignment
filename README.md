@@ -13,15 +13,17 @@ The game is `simple_spread` from the [MPE2](https://mpe2.farama.org/mpe2/simple_
 **No prior reinforcement learning experience is needed.** Everything runs on a laptop CPU.
 
 - Time: about 6 to 8 hours of work, spread over one week.
-- Deadline and submission: see the email you received with this link.
+- Deadline: see the email you received with this link.
 
 ## 1. Setup
+
+**Make your own copy first.** On this page, click **Use this template → Create a new repository**, choose **Private**, and create it. Then, in your new repository, open **Settings → Collaborators** and add **ayeps2000**. You will work and submit in your copy. Please do not fork this repository or open pull requests here.
 
 You need Python 3.10, 3.11 or 3.12 (not 3.13 or newer; see the tips at the end) and Git.
 
 ```bash
-git clone <this repository's URL>
-cd marl-teamwork-assignment
+git clone <your copy's URL>
+cd <your copy's folder>
 python -m venv .venv
 source .venv/bin/activate        # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
@@ -30,7 +32,7 @@ python check_setup.py
 
 The last command ends with `Setup OK.` if everything works.
 
-**Google Colab** also works. Run `!git clone <URL>`, `%cd marl-teamwork-assignment` and `!pip install -r requirements.txt`. Colab has no screen, so use `--gif` instead of `--render` to see the agents.
+**Google Colab** also works. Run `!git clone <your copy's URL>`, `%cd <your copy's folder>` and `!pip install -r requirements.txt`. Colab has no screen, so use `--gif` instead of `--render` to see the agents. Your copy is private, so cloning it on Colab needs a GitHub personal access token; working locally is simpler.
 
 ## 2. What is in this repository
 
@@ -113,7 +115,7 @@ Half a page: What did the agents learn to do? Where do they still fail? What wou
 
 ## 4. What to submit
 
-1. Your repository with the completed code and your `results/` folder (plots, JSON files, GIFs).
+1. Your private copy of this repository (shared with ayeps2000), with the completed code and your `results/` folder (plots, JSON files, GIFs).
 2. `report/REPORT.md`: 1 to 2 pages, with your answers, plots and tables. Start from `report/REPORT_TEMPLATE.md`.
 3. A 5-minute presentation in your interview, followed by questions about your code and results.
 
